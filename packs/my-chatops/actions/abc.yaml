@@ -1,0 +1,9 @@
+# walkthrough/actions/hello_world.yaml
+---
+name: hello_world
+runner_type: "local-shell-cmd"
+description: "Example 'Hello, World!' action"
+enabled: true
+parameters:
+  cmd:
+    default: "echo Hello, World!"

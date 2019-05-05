@@ -1,0 +1,6 @@
+---
+name: "hello"
+action_ref: "my-chatops.hello_world"
+description: "test."
+formats:
+  - "hello"
