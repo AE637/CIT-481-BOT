@@ -60,7 +60,12 @@ resource "aws_instance" "stackstorm" {
   # Install StackStorm on instance
   provisioner "remote-exec" {
     inline = [
-      "curl -sSL https://stackstorm.com/packages/install.sh | bash -s -- --user=${var.stackstorm_username} --password='${var.stackstorm_password}'"
+      "curl -sSL https://stackstorm.com/packages/install.sh | bash -s -- --user=${var.stackstorm_username} --password='${var.stackstorm_password}'",
+      "sudo apt upgrade -y",
+      "sudo apt update -y",
+      "sudo apt-get install gcc libkrb5-dev -y",
+      "st2 pack install ansible ",
+      
     ]
     
     connection {
