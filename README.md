@@ -4,10 +4,12 @@ New repo for final 481 project - ChatOps
 - Erik Blomquist
 
 ## Tools/Technologies used
+![Diagram Image](./images/Diagram.png)
 - [Terraform](#terraform)
 - [Slack and Hubot](#slack-and-hubot)
 - [StackStorm](#stackstorm)
 - [Ansible](#ansible)
+
 
 ## How to execute
 
