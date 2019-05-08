@@ -119,7 +119,8 @@ Go to your Slack workspace and type /invite @name-of-your-bot:
 
 ### Destroy
 
-5. Destroy 
+5. Destroy
+
 A good practice is to destroy the resources while they are not being used to avoid charges. 
 
         terraform destroy
