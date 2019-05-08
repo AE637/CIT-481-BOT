@@ -92,13 +92,13 @@ Go to your Slack workspace and type /invite @name-of-your-bot:
 
 4. Start/Stop/Restart service 
 
-                sudo systemctl start st2chatops
-                sudo systemctl restart st2chatops
+        sudo systemctl start st2chatops
+        sudo systemctl restart st2chatops
 
-                sudo st2ctl start
-                sudo st2ctl reload
+        sudo st2ctl start
+        sudo st2ctl reload
                 
-                sudo st2ctl reload --register-aliases
+        sudo st2ctl reload --register-aliases
 
 5. You should be able to see your bot online on Slack once your StackStorm service has restarted.
 
@@ -114,12 +114,11 @@ Go to your Slack workspace and type /invite @name-of-your-bot:
         !ansible ansible-playbook /home/ubuntu/test.yaml
 
 ### StackStorm Web UI
+
         https://your-public-dns
 
 
 ### Destroy
-
-5. Destroy
 
 A good practice is to destroy the resources while they are not being used to avoid charges. 
 
@@ -128,3 +127,4 @@ A good practice is to destroy the resources while they are not being used to avo
 ### Issues
 - t2.micro instances do not meet the minimal requirements. t2.medium instances are recommended for testing.
 - StackStorm Web UI blocked, need to open ports for it.
+- Invalid permissions (IAM, Roles, Policy, StackStorm)
