@@ -92,13 +92,13 @@ Go to your Slack workspace and type /invite @name-of-your-bot:
 
 4. Start/Stop/Restart service 
 
-        I don't know which of these commands that's the proper. restart st2chatops? st2ctl? both?
+                sudo systemctl start st2chatops
+                sudo systemctl restart st2chatops
 
-                sudo systemctl restart st2chatops
                 sudo st2ctl start
-                st2ctl reload
+                sudo st2ctl reload
+                
                 sudo st2ctl reload --register-aliases
-                sudo systemctl restart st2chatops
 
 5. You should be able to see your bot online on Slack once your StackStorm service has restarted.
 
